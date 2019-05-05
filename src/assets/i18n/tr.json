@@ -1,0 +1,23 @@
+{
+  "MainPage": {
+        "Div": "Sendlyme uygulamasını bilgisayarınızda kullanmak için",
+		"Line1": "Sendlyme uygulamasını telefonunuzda açın",
+		"Line2": "Eşleşme için telefonunuzu bu ekrana doğrultun"
+    },
+	"MenuPage": {
+			"Sended":"Gönderilen",
+			"Received":"Alınan",
+			"FileSelect": "Dosya Seç",
+			"Order":"Sıra",
+			"FileName":"Dosya Adı",
+			"Process":"İşlem",
+			"Download":"İndir",
+			"Send":"Gönder",
+			"SendedFile": "Gönderildi",
+			"FileSizeLimit": "Dosya boyutu 100 mb'dan küçük olmalıdır",
+			"Ok":"Tamam",
+      "Downloaded": "İndirildi"
+			
+	}
+	
+}

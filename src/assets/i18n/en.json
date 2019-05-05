@@ -1,0 +1,23 @@
+{
+  "MainPage": {
+        "Div": "Use Sendlyme app in your computer",
+		"Line1": "Open Sendlyme app on your mobile",
+		"Line2": "Point your mobile to the screen for pairing"
+    },
+	"MenuPage": {
+			"Sended":"Sent",
+			"Received":"Received",
+			"FileSelect": "File Select",
+			"Order":"Order",
+			"FileName":"File Name",
+			"Process":"Process",
+			"Download":"Download",
+			"Send":"Send",
+			"SendedFile": "Sent",
+			"FileSizeLimit": "The file must be less than 100 mb",
+			"Ok":"Ok",
+      "Downloaded": "Downloaded"
+			
+	}
+	
+}
