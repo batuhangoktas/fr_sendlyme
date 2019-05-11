@@ -20,6 +20,46 @@
 			"Ok":"Tamam",
       "Downloaded": "İndirildi"
 			
-	}
+	},
+  "Privacy": {
+    "Line1":"Gizlilik",
+    "Line2":"Sendly.me hakkında bilmeniz gereken en önemli şeyler aşağıdadır.",
+    "Line3":"İçerik: ",
+    "Line4":"Varsayılan olarak, dosyalar en fazla 15 dakika süreyle saklanır. Hedef dosyayı alırsa, dosya sunucudan silinir.",
+    "Line5":"Kişisel veriler: ",
+    "Line6":"Hizmeti sağlamak için aşağıdakiler gereklidir:",
+    "Line7":"Internet protokol adresi: ",
+    "Line8": "Standart olarak göndericinin ve alıcının IP adresleri kayıt altına alınmaktadır.",
+    "Line9":"Kişisel olmayan verileri: ",
+    "Line10":"Hizmet ve performansı geliştirmek için aşağıdaki verilere ulaşıyoruz:",
+    "Line11":"Akış verileri: ",
+    "Line12":"Dosya gönderme ve alma, yüklenen dosya sayısı, yaklaşık dosya boyutları, kişilerin web sitesine nasıl girdiği (harcanan zaman, tıklamalar, yönlendiren bilgiler, site çıkış yolu) bilgileri kayıt altına alınmaktadır.",
+    "Line13":"İstatistik verileri: ",
+    "Line14":"İşletim sistemi, tarayıcı, dil tercihi, ülke, zaman damgaları, dosya aktarma süresi, hataların nedenleri gibi bilgileri içerir.",
+    "Line15":"Üçüncü parti hizmetler: ",
+    "Line16":"Amazon İnternet Servislerini kullanıyoruz."
+
+  },
+
+  "Legal": {
+    "Line1":"Kısıtlamalar",
+    "Line2":"Sendly.me'ye, geliştiricilerine, reklam verenlerine ve üçüncü parti servislere saygı duymanızı diliyoruz. Buna gizlilik, kurumsal model ve ticari sırlar ve ticari markalar, telif hakları, ürün adları gibi fikri mülkiyet haklarına saygı gösterilmesi de dahildir. Sendly.me hizmetlerini yasadışı, cezai işlem veya ihlalleri taahhüt etmek, tanıtmak, kolaylaştırmak için kullanmamayı kabul edersiniz.",
+    "Line3":"Sendly.me servislerini kullanmanın bir ön koşulu olarak, aşağıdaki içerikleri kullanmamayı, saklamamayı veya aktarmamayı taahhüt edersiniz:",
+    "Line4":"çocuk pornosu içeren;",
+    "Line5":"şiddeti, ırkçılığı veya nefreti teşvik eden;",
+    "Line6":"müstehcen, küçük düşürücü, iftira niteliğinde, tehdit edici, saygısız, ahlaksız, küfürlü, ayrımcı, açık, zararlı, kaba veya yasadışı;",
+    "Line7":"alkol ve tütün ürünlerinin, uyuşturucuların, kumar oynamasını, kolaylaştırılmasını, satılmasını, kullanımını teşvik eden;",
+    "Line8":"yürürlükte olan herhangi bir yasayı veya düzenlemeyi ihlal eden;",
+    "Line9":"fikri mülkiyet haklarını, veri koruma haklarını içeren gizlilik haklarını ihlal etmeye ve uygunsuz kullanma hakkına sahip değilsiniz;",
+    "Line10":"Aşağıdaki hususları yapmamayı taahhüt ediyorsunuz:",
+    "Line11":"göz korkutmak, tehdit etmek, kötüye kullanmak, taciz etmek, şiddet uygulamak, diğer yasadışı davranış veya başkasının bunu yapmasını teşvik etmek;",
+    "Line12":"herhangi bir kişi / kuruluşun kimliğine bürünme veya taklit etme gibi davranmak;",
+    "Line13":"sendly.me web sitesinin veya hizmetlerinin halka açık olmayan alanlarına erişim;",
+    "Line14":"sendly.me hizmetlerimizin kullanıcıları hakkında bilgi toplamak;",
+    "Line15":"solucanlar, virüs, kötü amaçlı yazılım, fidye yazılımı, spam, kimlik avı postaları, istenmeyen mesajlar, her türlü reklam amaçlı kullanım;",
+    "Line16":"sendly.me web sitesinin veya hizmetlerinin güvenlik açığını araştırmaya, taramaya, tehlikeye atmaya veya test etmeye çalışmak;",
+    "Line17":"sendly.me hizmetlerinden herhangi birini tersine mühendislik uygulamak;"
+  }
+
 	
 }

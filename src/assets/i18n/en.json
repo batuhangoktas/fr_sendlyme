@@ -20,6 +20,45 @@
 			"Ok":"Ok",
       "Downloaded": "Downloaded"
 			
-	}
-	
+	},
+  "Privacy": {
+    "Line1":"Privacy",
+    "Line2":"Below are the top things you should know about Sendly.me",
+    "Line3":"Content: ",
+    "Line4":"By default, files are stored for a maximum of either 15 minutes. If target receive file, The file is delete from server.",
+    "Line5":"Personal data: ",
+    "Line6":"The following is necessary to provide the service:",
+    "Line7":"Internet protocol addresses: ",
+    "Line8": "We receive IP addresses of downloader and uploader as part of our standard server logs. These are retained .",
+    "Line9":"Non-personal data: ",
+    "Line10":"We receive the following to improve our service and performance:",
+    "Line11":"Flow data: ",
+    "Line12":"This includes information sending and receiving files, number of files uploaded and approximate file sizes, how people engage with the website (time spent, clicks, referrer information, site exit path).",
+    "Line13":"Statistics data: ",
+    "Line14":"This includes information such as operating system, browser, language preference, country, timestamps, duration for file transfer, reasons for errors.",
+    "Line15":"Third Party Services: ",
+    "Line16":"We use Amazon Web Services."
+
+  },
+  "Legal": {
+    "Line1":"Constraints",
+    "Line2":"We wish that you respect those of Sendly.me, its developers, advertisers and third parties. This includes respecting the right to privacy, corporate model and business secrets and intellectual property rights, such as trademarks, copyrights, product names. You agree not to use the Sendly.me services to commit or promote, facilitate unlawful or criminal acts or violations.",
+    "Line3":"As a pre condition to make use of the Sendly.me services you agree not to use, store or transfer any content this:",
+    "Line4":"features child pornography;",
+    "Line5":"encourage violence, racism or hatred;",
+    "Line6":"is obscene, defamatory, libelous, slanderous,threatening, profane, indecent, abusive, discriminating, lewd,   harmful, vulgar, or unlawful;",
+    "Line7":"encourage gambling or facilitate  or the sale or use of liquor products, tobacco products or illicit drugs.",
+    "Line8":"infringe on or violate any applicable law or regulation;",
+    "Line9":"you don’t have the right to transfer and/or copy ; infringe, violate or misappropriate intellectual property rights, privacy rights, including data protection rights, and/or any other kind of rights;",
+    "Line10":"You agree don't to those:",
+    "Line11":"intimidate, threaten, abuse, harass, commit violence, or otherwise act unlawful , or promote anyone else to do so;",
+    "Line12":"impersonate or falsely pretend affiliation with any person or entity;",
+    "Line13":"access any non-public areas of the Sendly.me website or services;",
+    "Line14":"use collect information about the users of our Sendly.me services;",
+    "Line15":"worms, send viruses, malware, ransomware, spam, chain letters, phishing mails, unsolicited messages, advertisements of any kind and for any purpose;",
+    "Line16":"attempt to probe, scan, compromise or test the vulnerability of the Sendly.me website or services;",
+    "Line17":"reverse engineer or decompile any of Sendly.me services;"
+  }
+
+
 }
