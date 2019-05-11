@@ -2,7 +2,9 @@
   "MainPage": {
         "Div": "Sendlyme uygulamasını bilgisayarınızda kullanmak için",
 		"Line1": "Sendlyme uygulamasını telefonunuzda açın",
-		"Line2": "Eşleşme için telefonunuzu bu ekrana doğrultun"
+		"Line2": "Eşleşme için telefonunuzu bu ekrana doğrultun",
+    "LegalInformation": "Yasal Bilgiler",
+    "Privacy": "Gizlilik"
     },
 	"MenuPage": {
 			"Sended":"Gönderilen",

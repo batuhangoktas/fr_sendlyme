@@ -20,12 +20,16 @@ import {MatDialogModule} from '@angular/material';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { LegalinfoComponent } from './legalinfo/legalinfo.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
     DialogpopupComponent,
+    PrivacyComponent,
+    LegalinfoComponent,
   ],
   imports: [
     BrowserModule,
