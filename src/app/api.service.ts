@@ -13,21 +13,12 @@ export class ApiService {
   constructor(private http: HttpClient) {
 this.adress = this.server;
   }
+  getCreateSession() {
 
-  getIpAddress() {
-    debugger;
-    return this.http.get('https://api.ipify.org/?format=json');
+    return this.http.get(this.adress + 'sendlyme/session/createsession?');
   }
-
-  getCreateSession(ip) {
-
-
-
-
-    return this.http.get(this.adress + 'sendlyme/session/createsession?ip=' + ip);
-  }
-  getHasSyncSession(ip, sessionId) {
-    return this.http.get(this.adress + 'sendlyme/session/hassessionsync?ip=' + ip + '&' + 'sessionid=' + sessionId);
+  getHasSyncSession(sessionId) {
+    return this.http.get(this.adress + 'sendlyme/session/hassessionsync?' + 'sessionid=' + sessionId);
   }
   getReceiveFileList(userId, sessionId) {
     return this.http.get(this.adress + 'sendlyme/session/filereceive?userid=' + userId + '&' + 'sessionid=' + sessionId);

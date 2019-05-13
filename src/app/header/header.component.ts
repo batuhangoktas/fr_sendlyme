@@ -29,14 +29,12 @@ export class HeaderComponent implements OnInit {
   }
   getCreateId() {
     debugger;
-    this.apiService.getIpAddress().subscribe(value1 => {
 
-      const ipAddress: string = value1["ip"];
-      this.apiService.getCreateSession(ipAddress)
+    this.apiService.getCreateSession()
         .subscribe( (res) => {
             this.value = (res["data"].sessionId);
             this.userId = res["data"].userId;
-            this.getHasSyncSession(ipAddress, this.value);
+            this.getHasSyncSession(this.value);
           }
           ,
           (err) => {
@@ -44,15 +42,14 @@ export class HeaderComponent implements OnInit {
             this.value = 'BBBB';
           });
 
-    });
 
 
 
   }
-  getHasSyncSession(ipAddress: string, sessionId: string) {
+  getHasSyncSession(sessionId: string) {
 
     setTimeout(() => {
-      this.apiService.getHasSyncSession(ipAddress, sessionId)
+      this.apiService.getHasSyncSession(sessionId)
         .subscribe( (res) => {
             console.log(res);
             if (res['status']) {
@@ -60,7 +57,7 @@ export class HeaderComponent implements OnInit {
               localStorage.setItem('sessionId', sessionId);
               this.router.navigateByUrl('/menu',  { state: { userId: this.userId, session: sessionId } });
             } else {
-              this.getHasSyncSession(ipAddress, sessionId);
+              this.getHasSyncSession(sessionId);
             }
 
           }
