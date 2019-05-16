@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   title = 'SendlyMe';
   elementType: 'url' | 'canvas' | 'img' = 'url';
-  value = 'db72d39226b440f1b9cba2067e909abe';
+  value = '';
   private timer;
   list;
   private userId: string;
@@ -28,9 +28,8 @@ export class HeaderComponent implements OnInit {
 
   }
   getCreateId() {
-    debugger;
 
-    this.apiService.getCreateSession()
+     this.apiService.getCreateSession()
         .subscribe( (res) => {
             this.value = (res["data"].sessionId);
             this.userId = res["data"].userId;

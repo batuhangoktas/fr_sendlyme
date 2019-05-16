@@ -55,7 +55,6 @@ export class MenuComponent implements OnInit {
     this.spinner.show();
 this.apiService.getFileDownload(item.id)
       .subscribe( (data) => {
-        debugger;
         this.spinner.hide();
         FileSaver.saveAs(data, item.name);
 
@@ -111,7 +110,6 @@ this.apiService.getFileDownload(item.id)
     this.spinner.show();
     this.apiService.getFileUpload(fileInput.file, this.sessionId, this.userId).subscribe(value => {
       this.spinner.hide();
-      debugger;
       let sendedMessage = '';
       this.translate.get('MenuPage.SendedFile').subscribe(params => {sendedMessage = params; });
       event._elementRef.nativeElement.innerText = sendedMessage;
@@ -175,7 +173,6 @@ this.apiService.getFileDownload(item.id)
 
 
   onFileChange(fileInput: any) {
-    debugger;
     if (fileInput.target.files) {
 
         for (let cnt = 0; cnt < fileInput.target.files.length; cnt++) {

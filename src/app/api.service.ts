@@ -30,7 +30,6 @@ this.adress = this.server;
     return this.http.get(this.adress + 'sendlyme/session/download?fileid=' + fileId, { responseType: 'blob' });
   }
   getFileUpload(file, sessionId, userId) {
-debugger;
     const formData = new FormData();
     formData.append('sessionid', sessionId);
     formData.append('userid', userId);

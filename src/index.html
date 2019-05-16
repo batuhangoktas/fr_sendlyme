@@ -14,21 +14,90 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137795515-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
   gtag('js', new Date());
 
   gtag('config', 'UA-137795515-1');
 </script>
 
-<body align="center" style="background-image: url('assets/background.jpg');
+<script>
+  debugger;
+
+
+  // function initializeMap() {
+  //   var c = document.getElementById("myCanvas");
+  //   c.width = window.innerWidth;
+  //   c.height = window.innerHeight;
+  //
+  //   var ctx = c.getContext("2d");
+  //   ctx.beginPath();
+  //
+  //   var heigthSize = $(window).height();
+  //   var widthSize= $(window).width();
+  //
+  //   ctx.moveTo(widthSize, heigthSize);
+  //
+  //   ctx.lineTo(widthSize,heigthSize);
+  //   ctx.lineTo(widthSize,heigthSize*0.8);
+  //   ctx.lineTo(0,heigthSize*0.85);
+  //   ctx.lineTo(0,heigthSize);
+  //   ctx.lineTo(widthSize,heigthSize);
+  //
+  //   ctx.closePath();
+  //   ctx.stroke();
+  // }
+
+
+</script>
+
+<script>
+  function initializeMap() {
+
+    console.log($("#canvas"));
+    var ctx = document.getElementById("canvas").getContext("2d");
+
+    ctx.fillStyle = '#f00';
+    ctx.beginPath();
+
+
+    ctx.moveTo(0, 30);
+
+    ctx.lineTo(300, 0);
+    ctx.lineTo(300, 200);
+    ctx.lineTo(0, 200);
+    ctx.fillStyle = '#F5C072'
+
+    ctx.closePath();
+    ctx.fill();
+
+  }
+
+</script>
+
+<body onload="initializeMap()" align="center" style="background-color: #BFE0F3;
   background-position: center; background-repeat: no-repeat;background-size: cover;width: 100%;">
+
 
 <div>
 
 
-
-<app-root></app-root>
+  <app-root></app-root>
 </div>
+
+
+<!--<canvas id="myCanvas" width="3000" height="1500">-->
+<!--</canvas>-->
+
+
+<canvas id="canvas" style="width: 100%;max-height: 150px;z-index: -1;     position: fixed;
+    bottom: 34px;">
+
+
+</canvas>
 
 </body>
 </html>

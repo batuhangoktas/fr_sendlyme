@@ -43,22 +43,29 @@
 
   "Legal": {
     "Line1":"Kısıtlamalar",
-    "Line2":"Sendly.me'ye, geliştiricilerine, reklam verenlerine ve üçüncü parti servislere saygı duymanızı diliyoruz. Buna gizlilik, kurumsal model ve ticari sırlar ve ticari markalar, telif hakları, ürün adları gibi fikri mülkiyet haklarına saygı gösterilmesi de dahildir. Sendly.me hizmetlerini yasadışı, cezai işlem veya ihlalleri taahhüt etmek, tanıtmak, kolaylaştırmak için kullanmamayı kabul edersiniz.",
-    "Line3":"Sendly.me servislerini kullanmanın bir ön koşulu olarak, aşağıdaki içerikleri kullanmamayı, saklamamayı veya aktarmamayı taahhüt edersiniz:",
+    "Line2":"Sendly.me'ye, geliştiricilerine, reklam verenlerine ve üçüncü parti servislere saygı duymanızı diliyoruz. Buna gizlilik, kurumsal model ve ticari sırlar ve ticari markalar, telif hakları, ürün adları gibi fikri mülkiyet haklarını ihlal etmekten kaçınmanız da dahildir. Sendly.me hizmetlerini, suç oluşturan fiilleri işlemek, hak ihlalleri yapmak, hukuka aykırı yol ve işlemleri, ürünleri ve benzeri şeyleri tanıtmak, bunların dağıtımı, yaygınlaştırılmasını ve bilinirliğini artırmak, ulaşımını  kolaylaştırmak için kullanmamayı kabul edersiniz.",
+    "Line3":"Sendly.me servislerini kullanmanın bir ön koşulu olarak, aşağıda sayılan içerikler başta olmak üzere, benzer tüm hukuken yasaklı içerikleri kullanmamayı, saklamamayı veya aktarmamayı taahhüt edersiniz:",
     "Line4":"çocuk pornosu içeren;",
-    "Line5":"şiddeti, ırkçılığı veya nefreti teşvik eden;",
-    "Line6":"müstehcen, küçük düşürücü, iftira niteliğinde, tehdit edici, saygısız, ahlaksız, küfürlü, ayrımcı, açık, zararlı, kaba veya yasadışı;",
-    "Line7":"alkol ve tütün ürünlerinin, uyuşturucuların, kumar oynamasını, kolaylaştırılmasını, satılmasını, kullanımını teşvik eden;",
-    "Line8":"yürürlükte olan herhangi bir yasayı veya düzenlemeyi ihlal eden;",
-    "Line9":"fikri mülkiyet haklarını, veri koruma haklarını içeren gizlilik haklarını ihlal etmeye ve uygunsuz kullanma hakkına sahip değilsiniz;",
+    "Line5":"ayrımcılığı, şiddeti, ırkçılığı veya nefreti teşvik eden;",
+    "Line6":"müstehcen, küçük düşürücü, iftira niteliğinde, tehdit edici, saygısız, ahlaksız, küfürlü, ayrımcı, şiddete teşvik eden, açık, zararlı, kaba veya yasadışı;",
+    "Line7":"alkol ve tütün ürünlerinin, uyuşturucu  ve bağımlılık yapıcı maddelerin, kumar oynamasını, kolaylaştırılmasını, satılmasını, kullanımını teşvik eden;",
+    "Line8":"tarafları ilgilendiren ve yürürlükte olan herhangi bir yasayı veya düzenlemeyi ihlal eden;",
+    "Line9":"fikri ve sınai mülkiyet hakları başta olmak üzere hukuken korunan tüm menfaatlerin, veri koruma haklarını içeren gizlilik haklarını ihlal etmeme ve uygunsuz kullanmama yükümlülüğü altındasınız;",
     "Line10":"Aşağıdaki hususları yapmamayı taahhüt ediyorsunuz:",
     "Line11":"göz korkutmak, tehdit etmek, kötüye kullanmak, taciz etmek, şiddet uygulamak, diğer yasadışı davranış veya başkasının bunu yapmasını teşvik etmek;",
-    "Line12":"herhangi bir kişi / kuruluşun kimliğine bürünme veya taklit etme gibi davranmak;",
+    "Line12":"herhangi bir kişi / kuruluşun kimliğine bürünme veya onlarmış gibi davranma, onları taklit etme gibi davranışlarda bulunmak;",
     "Line13":"sendly.me web sitesinin veya hizmetlerinin halka açık olmayan alanlarına erişim;",
-    "Line14":"sendly.me hizmetlerimizin kullanıcıları hakkında bilgi toplamak;",
+    "Line14":"sendly.me hizmetlerimizin kullanıcıları hakkında izinsiz veya hukuka aykırı bilgi toplamak;",
     "Line15":"solucanlar, virüs, kötü amaçlı yazılım, fidye yazılımı, spam, kimlik avı postaları, istenmeyen mesajlar, her türlü reklam amaçlı kullanım;",
     "Line16":"sendly.me web sitesinin veya hizmetlerinin güvenlik açığını araştırmaya, taramaya, tehlikeye atmaya veya test etmeye çalışmak;",
-    "Line17":"sendly.me hizmetlerinden herhangi birini tersine mühendislik uygulamak;"
+    "Line17":"sendly.me hizmetlerinden herhangi birini tersine mühendislik uygulamak;",
+
+    "Line18": "Sendly.me internet sitesinin başta fikri ve sinai haklar olmak üzere tüm hakları tarafımıza aittir. Tarafımızdan izin alınmaksızın kısmen veya tamamen kullanılması yasaktır. Sendly.me size hizmet verirken kanunun emirlerine ve hukuka bağlıdır. Tarafları ilgilendiren ve konusu suç olan bir davranış tespit edildiğinde konu yetkililere bildirilecektir. Sendly.me yetkili merci ve mahkeme tarafından talep gelmesi durumunda hukuk çerçevesi içerisinde istenen bilgi, belge verilecek ve gerekli yardımlar yapılacaktır.",
+    "Line19": "Sendly.me hizmeti kullanım sırasında ortaya çıkabilecek zararlardan sendly.me sorumlu değildir. Sendly.me programı kullanılırken taraflar dürüstlük ve iyi niyet kuralları çerçevesinde hareket etmekle yükümlüdür.",
+    "Line20": "Sendly.me kullanımı sırasında 3. Kişilere verilen zararlardan sorumluluğumuza gidilemez.",
+    "Line21": "Kullanıcıyla Sendly.me arasındaki hukuki uyuşmazlıklarla ilgili olarak öncellikle 6325 sayılı kanuna göre taraflar arabuluculuk yoluna gideceklerdir.",
+    "Line22": "Sendly.me uygulamasını kullanarak yukarıda sayılan tüm şartları ve yükümlülükleri kabul etmiş olursunuz Sendly.me değişen koşullara uygun olarak sözleşme şartlarında değişiklik yapma hakkına sahiptir."
+
   }
 
 	
