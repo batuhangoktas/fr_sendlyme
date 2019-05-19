@@ -17,6 +17,9 @@ export class HeaderComponent implements OnInit {
   private timer;
   list;
   private userId: string;
+  hasSessionSync = false;
+  interval = null;
+  lastSessionId = '';
 
   constructor(private router: Router, private service: TestService, private apiService: ApiService) { }
 
@@ -24,15 +27,25 @@ export class HeaderComponent implements OnInit {
 
    this.list = this.service.list;
    this.getCreateId();
+
    //this.loop();
 
   }
-  getCreateId() {
 
-     this.apiService.getCreateSession()
-        .subscribe( (res) => {
+  getCreateId() {
+    if (this.hasSessionSync) {
+      clearInterval(this.interval);
+    }
+    else {
+
+      this.apiService.getCreateSession()
+        .subscribe((res) => {
             this.value = (res["data"].sessionId);
             this.userId = res["data"].userId;
+            this.hasSessionSync = false;
+            if (this.interval == null) {
+              this.interval = setInterval(this.getCreateId.bind(this), 10000);
+            }
             this.getHasSyncSession(this.value);
           }
           ,
@@ -40,33 +53,38 @@ export class HeaderComponent implements OnInit {
             console.log(err);
             this.value = 'BBBB';
           });
-
+    }
 
 
 
   }
-  getHasSyncSession(sessionId: string) {
+  getHasSyncSession(sessionId) {
 
-    setTimeout(() => {
-      this.apiService.getHasSyncSession(sessionId)
-        .subscribe( (res) => {
-            console.log(res);
-            if (res['status']) {
-              localStorage.setItem('userId', this.userId);
-              localStorage.setItem('sessionId', sessionId);
-              this.router.navigateByUrl('/menu',  { state: { userId: this.userId, session: sessionId } });
-            } else {
-              this.getHasSyncSession(sessionId);
+
+    if (sessionId === this.value) {
+      setTimeout(() => {
+        this.apiService.getHasSyncSession(this.value)
+          .subscribe((res) => {
+              console.log(res);
+              if (res['status']) {
+                this.hasSessionSync = true;
+                localStorage.setItem('userId', this.userId);
+                localStorage.setItem('sessionId', this.value);
+                this.router.navigateByUrl('/menu', {state: {userId: this.userId, session: this.value}});
+              } else {
+
+                this.getHasSyncSession(sessionId);
+
+              }
+
             }
+            ,
+            (err) => {
+              console.log(err);
+            });
 
-          }
-          ,
-          (err) => {
-            console.log(err);
-          });
-
-    }, 2000);
-
+      }, 2000);
+    }
 
   }
 }

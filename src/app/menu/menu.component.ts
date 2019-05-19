@@ -141,8 +141,33 @@ this.apiService.getFileDownload(item.id)
             // res['name']
             // res['status']
             if (res['data'] != null) {
-              if(res['data'].length > 0) {
-              res['data'].forEach((valueReceive) => {
+              if(res['data']['timeStatus'] == false)
+              {
+
+                let sessionTime = '';
+                let okDialog = '';
+                this.translate.get('MenuPage.SessionTime').subscribe(params => {sessionTime = params; });
+                this.translate.get('MenuPage.Ok').subscribe(params => {okDialog = params; });
+
+                const snackBarRef = this.snackBar.open(sessionTime, okDialog, {
+
+                });
+
+                snackBarRef.afterDismissed().subscribe(info => {
+                  if (info.dismissedByAction === true) {
+                    localStorage.removeItem('userId');
+                    localStorage.removeItem('sessionId');
+                    window.location = <any>'https://sendly.me';
+
+                  }
+                });
+              }
+              else
+              {
+                document.getElementById("minute").innerHTML =  res['data']['time'] ;
+
+              if(res['data']['fileListModalList'].length > 0) {
+              res['data']['fileListModalList'].forEach((valueReceive) => {
                 const foundLocation = ELEMENT_DATA.find(e => e.id === valueReceive.id);
                 if (foundLocation == null) {
 
@@ -155,7 +180,7 @@ this.apiService.getFileDownload(item.id)
               });
 
 
-            }
+            }}
             }
 
             this.getReceiveList(userId, sessionId);

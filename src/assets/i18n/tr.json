@@ -18,7 +18,9 @@
 			"SendedFile": "Gönderildi",
 			"FileSizeLimit": "Dosya boyutu 100 mb'dan küçük olmalıdır",
 			"Ok":"Tamam",
-      "Downloaded": "İndirildi"
+      "Downloaded": "İndirildi",
+      "SessionTime": "Oturumunuz sona ermiştir",
+      "Minutes": "Dakika"
 			
 	},
   "Privacy": {

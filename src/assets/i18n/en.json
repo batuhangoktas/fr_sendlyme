@@ -18,7 +18,9 @@
 			"SendedFile": "Sent",
 			"FileSizeLimit": "The file must be less than 100 mb",
 			"Ok":"Ok",
-      "Downloaded": "Downloaded"
+      "Downloaded": "Downloaded",
+      "SessionTime": "Your session has expired",
+      "Minutes": "Minutes"
 			
 	},
   "Privacy": {
