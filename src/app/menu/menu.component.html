@@ -43,7 +43,7 @@
 
     <!--<button mat-raised-button color="accent" style="width: 100%;margin-top: 5px">Dosya Seç</button>-->
 
-
+    <div class="listScrool">
     <table mat-table [dataSource]="dataSourceSend" class="mat-elevation-z8" >
 
       <!--- Note that these columns can be defined in any order.
@@ -66,7 +66,13 @@
         <th mat-header-cell *matHeaderCellDef translate>MenuPage.Process</th>
         <td mat-cell *matCellDef="let row">
 
-          <button mat-raised-button #ref color="primary" style="width: 100%;margin-top: 5px" (click)="sendAction(row,ref)">{{ 'MenuPage.Send' | translate }}</button>
+          <div *ngIf="row.status == false">
+            <button mat-raised-button #ref color="primary" style="width: 100%;margin-top: 5px" (click)="sendAction(row,ref)">{{ 'MenuPage.Send' | translate }}</button>
+          </div>
+
+          <div *ngIf="row.status == true">
+            <button mat-raised-button #ref color="primary" disabled="true" style="width: 100%;margin-top: 5px">{{ 'MenuPage.SendedFile' | translate }}</button>
+          </div>
 
         </td>
       </ng-container>
@@ -75,7 +81,10 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumnsSend"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumnsSend;"></tr>
     </table>
-
+</div>
+    <div *ngIf="sendFileCnt > 1">
+      <button mat-raised-button color="primary" #ref style="width: 100%;margin-top: 5px; padding: 5px" (click)="selectSendAllFile(0)">{{ 'MenuPage.SendAll' | translate }}</button>
+    </div>
 
 
   </div>
@@ -85,6 +94,7 @@
       <span translate>MenuPage.Received</span>
 
     </mat-toolbar>
+    <div class="listScrool">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
       <!--- Note that these columns can be defined in any order.
@@ -109,7 +119,7 @@
 
           <div *ngIf="row.status == '0'">
 
-          <button mat-raised-button color="primary" #ref style="width: 100%;margin-top: 5px" (click)="selectAction(row,ref)">{{ 'MenuPage.Download' | translate }}</button>
+          <button mat-raised-button color="primary" #ref style="width: 100%;margin-top: 5px" (click)="selectAction(row,ref,false)">{{ 'MenuPage.Download' | translate }}</button>
           </div>
 
           <div *ngIf="row.status == '1'">
@@ -118,13 +128,13 @@
           </div>
 
         </td>
+
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
-
-
+    </div>
   </div>
 
 </div>

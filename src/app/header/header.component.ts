@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {TestService} from '../test.service';
 import {ApiService} from '../api.service';
 import {Router} from '@angular/router';
-import {Observable} from 'rxjs';
+import {delay} from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -38,21 +38,32 @@ export class HeaderComponent implements OnInit {
     }
     else {
 
-      this.apiService.getCreateSession()
-        .subscribe((res) => {
-            this.value = (res["data"].sessionId);
-            this.userId = res["data"].userId;
-            this.hasSessionSync = false;
-            if (this.interval == null) {
-              this.interval = setInterval(this.getCreateId.bind(this), 10000);
+      let qrCodeElement = document.getElementById('qrCode');
+      qrCodeElement.style.opacity = '0.1';
+      setTimeout(() => {
+
+        this.apiService.getCreateSession()
+          .subscribe((res) => {
+              this.value = (res["data"].sessionId);
+              this.userId = res["data"].userId;
+              this.hasSessionSync = false;
+              if (this.interval == null) {
+                this.interval = setInterval(this.getCreateId.bind(this), 45000);
+              }
+              this.getHasSyncSession(this.value);
+              qrCodeElement.style.opacity = '1';
             }
-            this.getHasSyncSession(this.value);
-          }
-          ,
-          (err) => {
-            console.log(err);
-            this.value = 'BBBB';
-          });
+            ,
+            (err) => {
+              console.log(err);
+              this.apiService.getCreateSession();
+            });
+
+
+      }, 1500);
+
+
+
     }
 
 

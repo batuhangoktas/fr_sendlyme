@@ -33,6 +33,7 @@ const SEND_DATA: SendFileElement[] = [
 
 ];
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -49,7 +50,7 @@ export class MenuComponent implements OnInit {
   sessionId: string;
   private blob: Blob;
   private progressDialog: MatDialogRef<DialogpopupComponent, any>;
-
+  sendFileCnt = 0;
   buttonDisabled = false;
   selectAction(item, event) {
     this.spinner.show();
@@ -106,14 +107,43 @@ this.apiService.getFileDownload(item.id)
       });
   }
 
-  sendAction(fileInput, event) {
+  selectSendAllFile(cnt) {
+    debugger;
+
+    var fileInput = SEND_DATA[cnt];
+    if (fileInput.status == true) {
+      cnt++;
+      this.selectSendAllFile(cnt);
+    }
+    else {
+      this.spinner.show();
+      this.apiService.getFileUpload(fileInput.file, this.sessionId, this.userId).subscribe(value => {
+        this.spinner.hide();
+        let sendedMessage = '';
+        this.translate.get('MenuPage.SendedFile').subscribe(params => {
+          sendedMessage = params;
+        });
+        // event._elementRef.nativeElement.innerText = sendedMessage;
+        // event.disabled = true;
+        this.sendFileCnt--;
+        fileInput.status = true;
+        cnt++;
+        this.selectSendAllFile(cnt);
+      });
+    }
+  }
+
+  sendAction(fileInput) {
+
     this.spinner.show();
     this.apiService.getFileUpload(fileInput.file, this.sessionId, this.userId).subscribe(value => {
       this.spinner.hide();
       let sendedMessage = '';
       this.translate.get('MenuPage.SendedFile').subscribe(params => {sendedMessage = params; });
-      event._elementRef.nativeElement.innerText = sendedMessage;
-      event.disabled = true;
+      // event._elementRef.nativeElement.innerText = sendedMessage;
+      // event.disabled = true;
+      this.sendFileCnt--;
+      fileInput.status = true;
     });
   }
 
@@ -237,6 +267,7 @@ this.apiService.getFileDownload(item.id)
         this.dataSourceSend = SEND_DATA;
         this.dataSourceSend = this.dataSourceSend.slice();
 
+
         // this.apiService.getFileUpload(fileInput.target.files[0], this.sessionId, this.userId).subscribe(value => {
         //
         //
@@ -245,6 +276,12 @@ this.apiService.getFileDownload(item.id)
         // reader.readAsDataURL(fileInput.target.files[0]);
       }
       }
+      this.sendFileCnt = 0;
+        SEND_DATA.forEach(value => {
+        if (value.status == false) {
+          this.sendFileCnt++;
+        }
+      });
     }
 
   }

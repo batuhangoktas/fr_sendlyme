@@ -20,7 +20,8 @@
 			"Ok":"Ok",
       "Downloaded": "Downloaded",
       "SessionTime": "Your session has expired",
-      "Minutes": "Minutes"
+      "Minutes": "Minutes",
+      "SendAll": "Send All"
 			
 	},
   "Privacy": {
