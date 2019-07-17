@@ -1,4 +1,4 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, HostListener, Inject, OnInit} from '@angular/core';
 import {MatSnackBar, MatTableDataSource} from '@angular/material';
 import {ApiService} from '../api.service';
 import {Router} from '@angular/router';
@@ -158,6 +158,20 @@ this.apiService.getFileDownload(item.id)
   ngOnInit() {
     this.dataSource = ELEMENT_DATA;
     this.getReceiveList(this.userId, this.sessionId);
+
+  }
+  @HostListener('window:unload', [ '$event' ])
+  unloadHandler(event) {
+    debugger;
+  }
+
+  @HostListener('window:beforeunload', [ '$event' ])
+  beforeUnloadHander(event) {
+    this.apiService.getFinishSession(this.sessionId)
+      .subscribe((res) => {
+
+
+      });
 
   }
 

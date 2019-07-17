@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import {ApiService} from './api.service';
 
 @Component({
   selector: 'app-root',

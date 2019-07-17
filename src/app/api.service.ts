@@ -46,4 +46,7 @@ this.adress = this.server;
   getTookFile(fileId) {
     return this.http.get(this.adress + 'sendlyme/session/tookfile?fileid=' + fileId);
   }
+  getFinishSession(sessionId) {
+    return this.http.get(this.adress + 'sendlyme/session/finishsession?sessionid=' + sessionId);
+  }
 }
