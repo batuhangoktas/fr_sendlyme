@@ -26,10 +26,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
 
    this.list = this.service.list;
-   this.getCreateId();
 
+    this.value = "4cb99abfb32d43d0a7d0d45fef676d094cb99abfb32d43d0a7d0d45fef676d09";
    //this.loop();
 
+  }
+
+  ngAfterContentInit(){
+    this.getCreateId();
   }
 
   getCreateId() {
@@ -76,7 +80,6 @@ export class HeaderComponent implements OnInit {
       setTimeout(() => {
         this.apiService.getHasSyncSession(this.value)
           .subscribe((res) => {
-              console.log(res);
               if (res['status']) {
                 this.hasSessionSync = true;
                 localStorage.setItem('userId', this.userId);
