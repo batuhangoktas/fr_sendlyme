@@ -1,10 +1,13 @@
 {
   "MainPage": {
-        "Div": "Sendlyme uygulamasını bilgisayarınızda kullanmak için",
-		"Line1": "Sendlyme uygulamasını telefonunuzda açın",
+        "Div": "Sendly.me uygulamasını bilgisayarınızda kullanmak için",
+		"Line1": "Sendly.me uygulamasını mağazadan indirin telefonunuzda açın",
 		"Line2": "Eşleşme için telefonunuzu bu ekrana doğrultun",
     "LegalInformation": "Yasal Bilgiler",
-    "Privacy": "Gizlilik"
+    "Privacy": "Gizlilik",
+    "Comment1": "Basit, hızlı, güvenli dosya aktarımı",
+    "Comment2": "Sendly.me platformlar arası qr okuma ile dosya transferi sağlar",
+    "Comment3": "E-mail yok, oturum yok, flash bellek yok"
     },
 	"MenuPage": {
 			"Sended":"Gönderilen",

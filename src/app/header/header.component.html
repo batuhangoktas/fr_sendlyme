@@ -1,29 +1,58 @@
 
-<div  style="">
-  <div align="center" style="width: fit-content;
+
+<div id="dis_bolme">
+
+
+  <div class="ic_bolme">
+
+
+    <div  style="">
+      <div align="center" style="width: fit-content;
     text-align: left;
     margin-left: auto;
     margin-right: auto;">
 
 
 
-  <div translate>MainPage.Div</div>
-    <li translate>MainPage.Line1</li>
-    <li translate>MainPage.Line2</li>
+        <div translate>MainPage.Div</div>
+        <li translate>MainPage.Line1</li>
+        <li translate>MainPage.Line2</li>
+      </div>
+    </div>
+
+    <br>
+
+    <ngx-qrcode id="qrCode" [qrc-element-type]="elementType" [qrc-value] = "value" style="display: flex; justify-content: center; text-align: center;">
+    </ngx-qrcode>
+
+    <br>
+    <br>
+
+    <div style="display: flex; justify-content: center;">
+      <a class="text-muted" href="https://play.google.com/store/apps/details?id=com.batuhan.sendlyme" style="margin-right: 5px"><img src="/assets/googleplay.png"></a>
+      <a class="text-muted" href="https://apps.apple.com/us/app/sendly-me/id1479179903?l=tr"><img src="/assets/appstore.png"></a>
+    </div>
+
   </div>
-</div>
 
-<br>
+  <div class="ic_bolme">
 
-<ngx-qrcode id="qrCode" [qrc-element-type]="elementType" [qrc-value] = "value" style="display: flex; justify-content: center; text-align: center;">
-</ngx-qrcode>
+    <div style="width: 100%;" align="center">
+      <a style="font-weight:bold;font-size: larger;"  translate>MainPage.Comment1</a>
 
-<br>
-<br>
+    </div>
 
-<div style="display: flex; justify-content: center;">
-  <a class="text-muted" href="https://play.google.com/store/apps/details?id=com.batuhan.sendlyme" style="margin-right: 5px"><img src="/assets/googleplay.png"></a>
-  <a class="text-muted" href="https://apps.apple.com/us/app/sendly-me/id1479179903?l=tr"><img src="/assets/appstore.png"></a>
+    <li translate>MainPage.Comment2</li>
+    <li translate>MainPage.Comment3</li>
+    <div style="width: 100%;margin-top: 10px" align="center">
+
+      <img class="responsive" src="/assets/sendlyme.png">
+
+    </div>
+  </div>
+
+
+
 </div>
 
   <!--<ul >-->

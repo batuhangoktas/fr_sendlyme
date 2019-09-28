@@ -1,10 +1,13 @@
 {
   "MainPage": {
-        "Div": "Use Sendlyme app in your computer",
-		"Line1": "Open Sendlyme app on your mobile",
+        "Div": "Use Sendly.me app in your computer",
+		"Line1": "Download the Sendly.me app from the store and open it on your phone",
 		"Line2": "Point your mobile to the screen for pairing",
     "LegalInformation": "Legal Information",
-    "Privacy": "Privacy"
+    "Privacy": "Privacy",
+    "Comment1": "Simple, fast, secure file transfer",
+    "Comment2": "Sendly.me enables file transfer with cross-platform qr reading",
+    "Comment3": "No e-mail, no session, no removable memory"
     },
 	"MenuPage": {
 			"Sended":"Sent",
