@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {Observable, of} from 'rxjs';
+import {catchError, timeout} from 'rxjs/operators';
+import {error} from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +17,12 @@ this.adress = this.server;
   }
   getCreateSession() {
 
-    return this.http.get(this.adress + 'sendlyme/session/createsession?');
+    return this.http.get(this.adress + 'sendlyme/session/createsession?').pipe(
+      timeout(1500),
+      catchError(e => {
+        return error();
+      })
+    );
   }
   getHasSyncSession(sessionId) {
     return this.http.get(this.adress + 'sendlyme/session/hassessionsync?' + 'sessionid=' + sessionId);

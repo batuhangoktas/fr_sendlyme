@@ -3,6 +3,7 @@ import {TestService} from '../test.service';
 import {ApiService} from '../api.service';
 import {Router} from '@angular/router';
 import {delay} from 'rxjs/operators';
+import {pipe} from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -44,7 +45,6 @@ export class HeaderComponent implements OnInit {
 
       let qrCodeElement = document.getElementById('qrCode');
       qrCodeElement.style.opacity = '0.1';
-      setTimeout(() => {
 
         this.apiService.getCreateSession()
           .subscribe((res) => {
@@ -62,11 +62,6 @@ export class HeaderComponent implements OnInit {
               console.log(err);
               this.apiService.getCreateSession();
             });
-
-
-      }, 1500);
-
-
 
     }
 
