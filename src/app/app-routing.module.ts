@@ -5,10 +5,11 @@ import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {PrivacyComponent} from './privacy/privacy.component';
 import {LegalinfoComponent} from './legalinfo/legalinfo.component';
+import {IntroComponent} from './intro/intro.component';
 
 const routes: Routes = [
   {
-    path: '', component: HeaderComponent
+    path: '', component: IntroComponent
   },
   {
   path: 'menu', component: MenuComponent

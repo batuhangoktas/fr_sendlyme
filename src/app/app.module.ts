@@ -22,6 +22,8 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { LegalinfoComponent } from './legalinfo/legalinfo.component';
+import { IntroComponent } from './intro/intro.component';
+import { QrpageComponent } from './qrpage/qrpage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,8 @@ import { LegalinfoComponent } from './legalinfo/legalinfo.component';
     DialogpopupComponent,
     PrivacyComponent,
     LegalinfoComponent,
+    IntroComponent,
+    QrpageComponent,
   ],
   imports: [
     BrowserModule,

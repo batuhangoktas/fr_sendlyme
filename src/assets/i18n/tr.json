@@ -1,4 +1,5 @@
 {
+  "LANGFLAG": "TR",
   "MainPage": {
         "Div": "Sendly.me uygulamasını bilgisayarınızda kullanmak için",
 		"Line1": "Sendly.me uygulamasını mağazadan indirin telefonunuzda açın",
@@ -72,7 +73,32 @@
     "Line21": "Kullanıcıyla Sendly.me arasındaki hukuki uyuşmazlıklarla ilgili olarak öncellikle 6325 sayılı kanuna göre taraflar arabuluculuk yoluna gideceklerdir.",
     "Line22": "Sendly.me uygulamasını kullanarak yukarıda sayılan tüm şartları ve yükümlülükleri kabul etmiş olursunuz Sendly.me değişen koşullara uygun olarak sözleşme şartlarında değişiklik yapma hakkına sahiptir."
 
-  }
+  },
+  "Download": {
 
-	
+    "Line1": "Sendly.me'yi keşfedin!",
+    "Line2": "Başlamak için şimdi indirin!"
+  },
+  "Features": {
+    "Resolution": "Yüksek Çözünürlük",
+    "ResolutionComment": "Fotoğraf ve Videolarınızda kalite kaybına yok açmaz",
+    "Platform": "Platform Bağımsız",
+    "PlatformComment": "İşletim sisteminden bağımsız kullanım",
+    "Basic": "Kullanım Kolaylığı",
+    "BasicComment": "Basit, hızlı dosya aktarımı sağlar",
+    "Security": "Güvenli Transfer",
+    "SecurityComment": "Farklı cihazlara şifre girişi gerekmeden dosya transferi sağlar"
+  },
+  "GetStarted": "Hemen kullanmaya başla.",
+  "DownloadNow": "Hemen İndir",
+
+  "TopBar": {
+
+    "Download": "İNDİR",
+    "Features": "YENİLİKLER"
+  },
+  "Descriptions": {
+    "Line1": "Ücretsiz, Hızlı, Güvenli Dosya Aktarımı",
+    "Line2": "Bu uygulama ile neler yapabileceğinize göz atın!"
+  }
 }

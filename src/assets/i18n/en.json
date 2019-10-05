@@ -1,4 +1,5 @@
 {
+  "LANGFLAG": "EN",
   "MainPage": {
         "Div": "Use Sendly.me app in your computer",
 		"Line1": "Download the Sendly.me app from the store and open it on your phone",
@@ -70,6 +71,33 @@
     "Line20": "We cannot be held responsible for damages to 3rd parties during the use of Sendly.me.",
     "Line21": "Regarding legal disputes between the user and Sendly.me, the parties shall first proceed to mediate in accordance with the law no. 6325.",
     "Line22": "By using the Sendly.me application, you agree to all of the above terms and conditions. Sendly.me reserves the right to change the terms of the contract in accordance with the changing conditions."
+  },
+  "Download": {
+
+    "Line1": "Discover Sendly.me!",
+    "Line2": "Download now to get started!"
+  },
+  "Features": {
+    "Resolution": "High Resolution",
+    "ResolutionComment": "No loss of quality in your Photos and Videos",
+    "Platform": "Platform Independent",
+    "PlatformComment": "Operating system independent",
+    "Basic": "Ease of Use",
+    "BasicComment": "Simple, fast file transfer",
+    "Security": "Secure Transfer",
+    "SecurityComment": "Transfer files to different devices without requiring password entry"
+  },
+  "GetStarted": "Get started now.",
+  "DownloadNow": "Download Now",
+
+  "TopBar": {
+
+    "Download": "Download",
+    "Features": "Features"
+  },
+  "Descriptions": {
+    "Line1": "Free, Fast, Secure File Transfer",
+    "Line2": "Check out what you can do with this app!"
   }
 
 
