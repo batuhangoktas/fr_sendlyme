@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html >
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: white;
+    opacity: 0.6;">
+  <div class="container">
+    <img width="30px" height="30px" src="assets/fav.png">
+    <a class="navbar-brand" href="#page-top" style="color: black; margin-left: 20px">Sendly.me</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#download" style="color: black" translate>TopBar.Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features" style="color: black" translate>TopBar.Features</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="masthead">
+  <div class="container h-100" style="margin-top: -45px;">
+    <div class="row h-100">
+      <div class="col-lg-7 my-auto">
+        <div class="header-content mx-auto">
+          <h1 class="mb-5"  translate>MainPage.Comment1</h1>
+          <h4 class="mb-5"  style="font-size: 1.7rem;" translate>MainPage.Line1</h4>
+          <h4 class="mb-5"  style="font-size: 1.7rem;" translate>MainPage.Line2</h4>
+          <a href="#download" class="btn btn-outline btn-xl" style="background-color: #FDCC52" translate>DownloadNow</a>
+        </div>
+      </div>
+        <div class="col-lg-5 my-auto" style="text-align: -webkit-center; padding-bottom: 100px;">
+        <div style="background-color: white;width: 270px;height: 220px; border-radius: 10px; ">
+
+          <ngx-qrcode id="qrCode" qrc-class = "test-class" [qrc-element-type]="elementType" [qrc-value] = "value" style="display: flex; justify-content: center; text-align: center; ">
+          </ngx-qrcode>
+
+          <div style="margin-top: 10px" translate>MainPage.Line3</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="download bg-primary text-center" id="download">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h2 class="section-heading" translate>Download.Line1</h2>
+        <p translate>Download.Line2</p>
+        <div class="badges">
+          <a class="badge-link"  href="https://play.google.com/store/apps/details?id=com.batuhan.sendlyme" ><img src="../../assets/img/google-play-badge.svg" alt=""></a>
+          <a class="badge-link"  href="https://apps.apple.com/us/app/sendly-me/id1479179903?l=tr"><img src="../../assets/img/app-store-badge.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 translate>Descriptions.Line1</h2>
+      <p class="text-muted" translate>Descriptions.Line2</p>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 my-auto">
+        <div class="device-container">
+          <div class="device-mockup iphone6 portrait white">
+            <div class="device">
+              <div class="screen">
+                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                <img *ngIf="LANGFLAG === 'TR'" src="../../assets/img/demo-screen-2.jpg" class="img-fluid" alt="">
+                <img *ngIf="LANGFLAG != 'TR' && LANGFLAG != 'null'" src="../../assets/img/demo-screen-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="button">
+                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 my-auto">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="feature-item">
+                <i class="icon-screen-smartphone text-primary"></i>
+                <h3 translate>Features.Platform</h3>
+                <p class="text-muted" translate>Features.PlatformComment</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="feature-item">
+                <i class="icon-camera text-primary"></i>
+                <h3 translate>Features.Resolution</h3>
+                <p class="text-muted" translate>Features.ResolutionComment</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="feature-item">
+                <i class="icon-present text-primary"></i>
+                <h3 translate>Features.Basic</h3>
+                <p class="text-muted" translate>Features.BasicComment</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="feature-item">
+                <i class="icon-lock-open text-primary"></i>
+                <h3 translate>Features.Security</h3>
+                <p class="text-muted" translate>Features.SecurityComment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta-content">
+    <div class="container">
+      <h2 translate>GetStarted</h2>
+      <a href="#download" class="btn btn-outline btn-xl" style="background-color: #FDCC52" translate>DownloadNow</a>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <p>&copy; 2019 Sendly.me</p>
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="#"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+
+
+</body>
+
+</html>

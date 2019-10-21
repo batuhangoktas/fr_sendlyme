@@ -2,8 +2,9 @@
   "LANGFLAG": "EN",
   "MainPage": {
         "Div": "Use Sendly.me app in your computer",
-		"Line1": "Download the Sendly.me app from the store and open it on your phone",
-		"Line2": "Point your mobile to the screen for pairing",
+		"Line1": "1. Download the Sendly.me app from the store and open it on your phone",
+		"Line2": "2. Point your mobile to the screen for pairing",
+    "Line3": "Join with the Sendly.me app",
     "LegalInformation": "Legal Information",
     "Privacy": "Privacy",
     "Comment1": "Simple, fast, secure file transfer",

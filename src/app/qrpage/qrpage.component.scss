@@ -1,0 +1,45 @@
+#dis_bolme {
+  width: auto;
+  display: flex;
+  box-shadow: 0 12px 18px 2px rgba(34,0,51,.04), 0 6px 22px 4px rgba(7,48,114,.12), 0 6px 10px -4px rgba(14,13,26,.12);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.ic_bolme {
+  width:50%;
+  height: 350px;
+  display:inline-block;
+  float: left;
+
+  direction: ltr;
+
+}
+
+.responsive {
+  max-width: 100%;
+  max-height: 250px;
+  height: auto;
+}
+
+/* The block of code below tells the browsers what to do on a screen that has a width of 320px or less */
+
+@media screen and (max-width: 512px) {
+
+  .ic_bolme {
+    width: 90%;
+    height: auto;
+    display: block; /* Stops it from floating */
+    margin: auto; /* Ensures that it is centered */
+    margin-bottom: 25px; /* Space between the stacked elements */
+  }
+
+  #dis_bolme {
+    width: auto;
+    display: inline-block;
+  }
+
+
+}
