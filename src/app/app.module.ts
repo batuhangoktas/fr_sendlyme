@@ -24,6 +24,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { LegalinfoComponent } from './legalinfo/legalinfo.component';
 import { IntroComponent } from './intro/intro.component';
 import { QrpageComponent } from './qrpage/qrpage.component';
+import { DragDropDirective } from './drag-drop.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { QrpageComponent } from './qrpage/qrpage.component';
     LegalinfoComponent,
     IntroComponent,
     QrpageComponent,
+    DragDropDirective,
   ],
   imports: [
     BrowserModule,

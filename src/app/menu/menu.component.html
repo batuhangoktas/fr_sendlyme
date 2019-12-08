@@ -32,9 +32,14 @@
 
     </mat-toolbar>
 
-    <button mat-raised-button color="accent" style="width: 100%;margin-top: 5px" onClick="document.getElementById('inputUpload').click()">{{ 'MenuPage.FileSelect' | translate }}</button>
 
-    <input id="inputUpload" type="file" multiple name="avatar" style="display: none" (change)="onFileChange($event)" />
+    <div class="uploadfilecontainer" (click)="inputUpload.click()" appDragDrop (onFileDropped)="onFileChange($event)">
+    </div>
+
+    <!--<button mat-raised-button color="accent" style="width: 100%;margin-top: 5px" onClick="document.getElementById('inputUpload').click()">{{ 'MenuPage.FileSelect' | translate }}</button>-->
+
+
+    <input id="inputUpload" #inputUpload type="file" multiple name="avatar" style="display: none" (change)="onFileChange($event)" />
 
     <!--<button type="button" mat-raised-button color="accent" style="width: 100%;margin-top: 5px" #filePicker="ngxFilePicker"-->
             <!--[ngxFilePicker]="readMode" multiple accept="image/*" (readStart)="onReadStart($event)"-->
@@ -82,6 +87,8 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumnsSend;"></tr>
     </table>
 </div>
+
+
     <div *ngIf="sendFileCnt > 1">
       <button mat-raised-button color="primary" #ref style="width: 100%;margin-top: 5px; padding: 5px" (click)="selectSendAllFile(0)">{{ 'MenuPage.SendAll' | translate }}</button>
     </div>

@@ -242,12 +242,21 @@ this.apiService.getFileDownload(item.id)
 
 
   onFileChange(fileInput: any) {
-    if (fileInput.target.files) {
+    debugger;
+    var fileList;
+    if (fileInput.target) {
+      fileList = fileInput.target.files;
+    }
+    else if (fileInput.length > 0) {
+      fileList = fileInput;
+         }
 
-        for (let cnt = 0; cnt < fileInput.target.files.length; cnt++) {
+    if (fileList) {
+
+        for (let cnt = 0; cnt < fileList.length; cnt++) {
 
 
-      if (fileInput.target.files[cnt].size / 1024 / 1024 > 100) {
+      if (fileList[cnt].size / 1024 / 1024 > 100) {
 
         let sizeLimit = '';
         let okDialog = '';
@@ -276,18 +285,18 @@ this.apiService.getFileDownload(item.id)
 
         SEND_DATA.push({
           position: SEND_DATA.length + 1,
-          name: fileInput.target.files[cnt].name, status: false, file: fileInput.target.files[cnt]
+          name: fileList[cnt].name, status: false, file: fileList[cnt]
         });
         this.dataSourceSend = SEND_DATA;
         this.dataSourceSend = this.dataSourceSend.slice();
 
 
-        // this.apiService.getFileUpload(fileInput.target.files[0], this.sessionId, this.userId).subscribe(value => {
+        // this.apiService.getFileUpload(fileList[0], this.sessionId, this.userId).subscribe(value => {
         //
         //
         // });
         //
-        // reader.readAsDataURL(fileInput.target.files[0]);
+        // reader.readAsDataURL(fileList[0]);
       }
       }
       this.sendFileCnt = 0;
